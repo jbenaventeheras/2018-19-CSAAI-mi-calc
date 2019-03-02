@@ -1,0 +1,9 @@
+body{
+  align: center;
+  background-image: url(tex.jpg);
+}
+
+p{
+  margin-left: 100px;
+  color: rgb(255, 115, 144);
+}
