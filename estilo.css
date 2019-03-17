@@ -1,19 +1,29 @@
 body{
-  align: right;
+  align: center;
   background-image: url(tex.jpg);
+}
+
+div{
+
+ margin: 0 auto;
+ padding: 40px;
+ border-radius: 15px;
+
 }
 
 
 .calculadora { border: 10px black ridge; width: 300px;text-align: center;
-               background-color: red; }
+               background-color: red; align: center;}
 
 /*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
 #Pantalla { width: 200px; border: 2px black solid; text-align: right;
                  position: relative; left: 40px;  padding: 15px 20px;
-                 background-color: white; font-family: "comic sans";
-                 overflow: hidden;}
+                 background-color: lightblue;}
 
-/*botones normales: anchura y margen*/
-.calculadora [type=button] { width: 50px; padding: 50;  }
-/*botones especiales*/
-.calculadora input.largo { color: black; width: 60px; }
+
+
+
+
+.calculadora [type=button] {font-family:fantasy;;font-size: 20px ;width: 70px; background-color: lightgreen; height: 40px}
+
+.calculadora input.especial{ font-style: italic; color: black; width: 80px; background-color: lightyellow;}
