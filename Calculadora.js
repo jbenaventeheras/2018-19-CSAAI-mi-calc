@@ -25,6 +25,9 @@ function main() {
   var nueve = document.getElementById("9");
   var cero = document.getElementById("0");
   var pi = document.getElementById("pi");
+  var sumabin = document.getElementById("+bin");
+
+
 
 
 
@@ -40,6 +43,7 @@ function main() {
   ocho.onclick = () => {display.innerHTML = display.innerHTML + "8"}
   nueve.onclick = () => {display.innerHTML = display.innerHTML + "9"}
   pi.onclick = () => {display.innerHTML = display.innerHTML + "3.14159265359"}
+  sumabin.onclick = () => {display.innerHTML = display.innerHTML + "+bin"}
 
 
   suma.onclick = () => {num1 = display.innerHTML
@@ -60,6 +64,10 @@ function main() {
 
   del.onclick = () => {display.innerHTML = ""}
 
+  sumabin.onclick = () => {
+    num1 = display.innerHTML
+    num1dec = parseInt(num1, 2);
+    display.innerHTML = display.innerHTML + "+bin" ;operador = "+bin"}
 
 
 
@@ -71,6 +79,12 @@ function main() {
           case "+":
             num2 = linea.split("+")[1];
             res = parseFloat(num1) + parseFloat(num2);
+            break;
+          case "+bin":
+            num2 = linea.split("+bin")[1];
+            num2dec = parseInt(num2, 2);
+            res = parseFloat(num1dec) + parseFloat(num2dec);
+            res = res.toString(2)
             break;
           case "-":
           num2 = linea.split("-")[1];
